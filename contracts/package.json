@@ -1,0 +1,18 @@
+{
+  "name": "txnhub-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@chainlink/contracts": "^0.5.1",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@openzeppelin/contracts": "^4.8.0",
+    "@openzeppelin/hardhat-upgrades": "^1.22.0",
+    "@solidstate/contracts": "^0.0.52",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.0.5",
+    "hardhat": "^2.12.5",
+    "nft.storage": "^7.0.0"
+  }
+}

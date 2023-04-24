@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+artifacts
+node_modules
+*.iml
+.idea
+.git
+.openzeppelin
+cache
