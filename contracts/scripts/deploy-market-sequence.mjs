@@ -51,7 +51,7 @@ async function deployMarketSequence(chainConfig, contractClass, exchangeRateCont
     return {market: marketAddr, supports: chainConfig}
 }
 
-deployMarketSequence({}, 'TxnSimpleMarketV3', '0xAB594600376Ec9fD91F8e885dADF0CE036862dE0', true, 18,
+deployMarketSequence({}, 'TxnSimpleMarketV4', '0xAB594600376Ec9fD91F8e885dADF0CE036862dE0', true, 18,
     [])
     .then((obj) => {
         console.log(obj)

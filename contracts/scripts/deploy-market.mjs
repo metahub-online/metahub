@@ -11,7 +11,7 @@ async function deployMarket(chain) {
     let exchangeRateContract = chainConfig.exchange.pricefeed
     let inverse = chainConfig.exchange.inverse
     let chainDigits = chainConfig.exchange.digits
-    const TxnHubMarket = await ethers.getContractFactory('TxnSimpleMarketV2')
+    const TxnHubMarket = await ethers.getContractFactory('TxnSimpleMarketV4')
     const marketPlace = await upgrades.deployProxy(TxnHubMarket, [roleManagerContract, mintableMarket, saleMarket, exchangeRateContract, inverse, chainDigits], {initializer: 'initialize'})
     await marketPlace.deployed()
     return marketPlace

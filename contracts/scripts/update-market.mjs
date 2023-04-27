@@ -11,7 +11,7 @@ async function upgradeMarket(chain) {
     const chainCfg = chainConfigs[chain]
     const marketAddr = chainCfg.market
     // const TxnHubMarketv2 = await ethers.getContractFactory('TxnSimpleMarketV2')
-    const TxnHubMarketv3 = await ethers.getContractFactory('TxnSimpleMarketV3')
+    const TxnHubMarketv3 = await ethers.getContractFactory('TxnSimpleMarketV4')
     // const marketExistsContract = await upgrades.forceImport(marketAddr, TxnHubMarketv2)
     const marketPlace = await upgrades.upgradeProxy(marketAddr, TxnHubMarketv3)
     // const marketPlace = await upgrades.upgradeProxy(marketExistsContract, TxnHubMarketv3)
